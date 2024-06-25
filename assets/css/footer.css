@@ -1,0 +1,51 @@
+.rodape{
+    background-color: var(--cinza-rodape);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em;
+}
+
+.rodape__titulo{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.rodape__texto{
+    color: var(--cinza);
+    font-size: 1.25rem;
+    margin: 1.2em 0;
+}
+
+.rodape__input{
+    padding: 0.5em;
+    border-style: none;
+    border: 1px solid var(--cinza-borda-input);
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-right: 0.8em;
+}
+
+.rodape__input::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    color: var(--cinza)
+}
+
+.rodape__copyright{
+    color: var(--cinza-copyright);
+    margin-top: 1.2em;
+}
+
+
+
+@media screen and (max-width:768px){
+    .rodape{padding: 2.5em;}
+    .rodape__titulo{font-size: 1.12rem;}
+    .rodape__texto{font-size: 1rem;}
+}
+
+@media screen and (max-width:390PX){
+    .rodape__input{margin-bottom: 1em;}
+}

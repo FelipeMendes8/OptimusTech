@@ -1,0 +1,47 @@
+.metricas__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 8%;
+}
+
+.metricas__card{
+    box-sizing: border-box;
+    text-align: start;
+    flex: 1;
+    /*padding: 1em;*/
+    padding-right: 2em;
+}
+
+.metricas__titulo{
+    color: var(--marrom);
+    font-weight: 600;
+    font-size: 3.75rem;
+}
+
+.metricas__subtitulo{
+    color: var(--azul-escuro);
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin: 1em 0;
+}
+
+.metricas__texto{
+    color:var(--cinza);
+}
+
+
+
+@media screen  and (min-width:620px) and (max-width:770px) {
+    .metricas__container{margin: 1em 3%;}
+    .metricas__titulo{font-size: 2.5rem;}
+} 
+
+@media screen and (max-width:620px){
+    .metricas__container{flex-wrap: wrap;}
+    .metricas__card{text-align: center; margin-top: 1em;}
+    .metricas__titulo{font-size: 1.7rem;}
+}
+
+ @media screen and (max-width:445px){
+    .metricas__container{flex-direction: column;}
+} 

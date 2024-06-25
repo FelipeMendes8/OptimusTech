@@ -1,0 +1,45 @@
+
+.cabecalho{margin:1em 8%;}
+.cabecalho__imagem{align-items: center;}
+
+.menu{
+    display: flex;
+    justify-content:space-between;
+}
+.menu__navegacao--itens,
+.menu__navegacao--login{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu__navegacao--itens{
+    margin-right: auto;
+    padding-left: 2em;
+}
+.menu__navegacao--item{
+    margin-left: 2em;
+    text-decoration: none;
+}
+.menu__navegacao--link{
+    text-decoration: none;
+    color:var(--cinza);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.menu__navegacao--link:hover{color:var(--marrom-hover);}
+
+/*Retirei o menu de navegação contendo os links: home, produtos, recursos e sobre nós do tablet de 768px
+e os links de login de celulares com tela menor que 375px pois irei colocar um menu hamburguer em breve.
+*/
+
+
+
+@media screen and (max-width:768px){
+    ul.menu__navegacao--itens{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .menu__navegacao--login{display: none;} 
+}

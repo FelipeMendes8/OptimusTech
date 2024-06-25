@@ -1,0 +1,48 @@
+@import url("cabecalho.css");
+@import url("sobre.css");
+@import url("metricas.css");
+@import url("banner.css");
+@import url("vagas.css");
+@import url("depoimentos.css");
+@import url("footer.css");
+
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+/*Definindo as variáveis do CSS*/
+:root{
+    --branco: #FFFFFF;
+    --cinza: #667085;
+    --cinza-claro: #EAECF0;
+    --cinza-rodape: #F9FAFB;
+    --cinza-borda-input: #D0D5DD;
+    --cinza-copyright: #98A2B3;
+    --marrom: #8E2424;
+    --marrom-hover: #a54242;
+    --azul-escuro: #101828;
+    
+    --fonte-principal: "Inter", sans-serif;
+    --cor-de-fundo-botoes: rgba(142, 36, 36, 0.05);
+}
+
+/*Defindo padrões para o corpo do site*/
+body{
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Componente de botão*/
+.botao__marrom{
+    border-style: none;
+    border-radius: 8px;
+    background-color: var(--marrom);
+    color: var(--branco);
+    padding: 0.5em;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.botao__marrom:hover{background-color: var(--marrom-hover);}

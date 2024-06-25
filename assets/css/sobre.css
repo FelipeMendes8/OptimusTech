@@ -1,0 +1,34 @@
+.sobre__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+}
+.sobre__container--texto{
+    color: var(--marrom);
+    font-weight: 600;
+}
+
+.sobre__container--titulo{
+    margin: 0.5em 0 ;
+    font-size: 3rem;
+    font-weight: 700;
+    color:var(--azul-escuro);
+}
+
+.sobre__container--paragrafo{
+    font-size: 1.25rem;
+    color: var(--cinza);
+    text-align:center;
+}
+
+
+
+@media screen and (max-width:768px){
+    .sobre__container{padding: 2.5em;}
+    .sobre__container--titulo{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .sobre__container--paragrafo{font-size: 1rem;}
+}

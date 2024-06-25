@@ -1,0 +1,42 @@
+.section__depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    margin: 5em 8%;
+    background-color: var(--cor-de-fundo-botoes);
+    text-align: center;
+    border-radius: 16px;
+}
+
+.depoimentos__texto{
+    color: var(--marrom);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.depoimentos__titulo{
+    color: var(--azul-escuro);
+    font-size: 2.25rem;
+    font-weight:500;
+    margin: 0.5em 0 1em 0;
+}
+
+.depoimentos__nome{
+    color: var(--azul-escuro);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.depoimentos__profissao{
+    color: var(--cinza);
+    font-size: 0.875rem;
+}
+
+
+
+@media screen and (max-width:425px){
+    .section__depoimentos{margin: 2.5em;}
+    .depoimentos__titulo{font-size: 1.12rem;}
+}
